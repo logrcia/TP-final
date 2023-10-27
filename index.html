@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js.js">
+
     <title>Document</title>
 </head>
 <body>
@@ -11,29 +14,54 @@
     tiempo restante(90s, 75s, 50s), si toca cable incorrecto -10s
     cables (correcto e incorrectos)
     si se termina el tiempo la bomba explota, sino pasa al siguiente escenario, y si desactiva las tres bombas gana-->
-    <h1>desactiva la bomba!! porfa</h1>
 
-    <div>niveles</div>
-
-    <div>bomba
-        <img src="https://cdn.pixabay.com/photo/2017/01/31/16/59/bomb-2025548_960_720.png" alt="bomba dibujo">
+    <div id="inicio">
+        <h1 id="bienvenido">Bienvenido/a al Juego de la Bomba</h1>
+        <form onsubmit="return onSubmit()">
+            <label for="input" >Ingrese su nombre</label>
+            <input type="text" id="input" placeholder="Nombre">
+            <button type="submit" id="submit">Enviar</button>
+        </form>
+        <button id="siguiente">siguiente</button>
     </div>
 
-    <div>cables
-        <button>cable</button>
-        <button>cable</button>
-        <button>cable</button>
-        <button>cable</button>
-        <button>cable</button>
-        <button>cable</button>
-        <button>cable</button>
-        <button>cable</button>
-        <button>cable</button>
-        <button>cable</button>
+    
+    <div id="instrucciones">
+        <img src="./assets/CONSIGNA.png">
+         <button id="comenzar">comenzar</button>
     </div>
+        
+    <div id="todo">
 
-    <div>contador
-    <h3>Tiempo Restante: </h3>    
+        <div>
+            <h3>Nivel Fácil</h3>
+        </div>
+
+        <div>
+            <div>bomba
+            <img src="https://cdn.pixabay.com/photo/2017/01/31/16/59/bomb-2025548_960_720.png" alt="bomba dibujo">
+            </div>
+
+            <div>cables
+                <img>
+                <img>
+                <img>
+                <img>
+                <img>
+                <img>
+                <img>
+                <img>
+                <img>
+                <img>
+            </div>
+            
+            <div>
+                <h3>Tiempo Restante: </h3>    
+            </div>
+
+        </div>
+
     </div>
+    <script src="js.js"></script>
 </body>
 </html>
