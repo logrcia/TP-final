@@ -31,7 +31,7 @@ body{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    display:flex;
+    display:inline;
     justify-content: center;
 }
 #ganaste {
@@ -45,3 +45,8 @@ body{
     justify-content: center;
     font-size: 40px;
 }
+.cables{
+    display: inline;
+    align-items: center;
+}
+
