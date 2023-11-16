@@ -17,7 +17,7 @@
 
 
     <div id ="modalPerdiste">
-        <img src="./assets/Perdiste.png">
+        <img src="./assets/Perdiste.png" class="imagenes">
         <button onclick="reiniciar()">Proba otra vez</button>
     </div>
 
@@ -28,23 +28,23 @@
             <input type="text" id="input" placeholder="Nombre">
             <button type="submit" id="submit">Enviar nombre</button>
         </form>
-        <button id="siguiente">Siguiente</button>
+        <button id="siguiente" class="botones">Siguiente</button>
     </div>
 
     
     <div id="instrucciones">
-        <img src="./assets/CONSIGNA.png">
-         <button id="comenzar">Comenzar</button>
+        <img src="./assets/CONSIGNA.png" class="imagenes">
+         <button id="comenzar" class="botones">Comenzar</button>
     </div>
         
     <div id="todo">
         <div id="niveles">
-            <h3>Nivel Fácil</h3>
+            <h3 class="nivel">Nivel Fácil</h3>
         </div>
 
         <div>
             <div>
-            <img src="https://cdn.pixabay.com/photo/2017/01/31/16/59/bomb-2025548_960_720.png" alt="bomba dibujo">
+            <img src="https://cdn.pixabay.com/photo/2017/01/31/16/59/bomb-2025548_960_720.png" alt="bomba dibujo" id="bomba">
             </div>
 
             <div>
@@ -61,11 +61,15 @@
             </div>
             
             <div>
-                <h3>Tiempo Restante: </h3>  
-                <p id="timer"> 90 </p>
-                <h3 id="nombre">nombre</h3>
-                <h3>Puntaje: </h3>
-                <span id="score">0</span>  
+                <div class="timer">
+                    <h3 id="tiempoRestante">Tiempo Restante: </h3>  
+                    <p id="timer"> 90 </p>
+                </div>
+                <div class="score">
+                    <h3 id="nombre">nombre</h3>
+                    <h3 id="puntaje">Puntaje: </h3>
+                    <span id="score">0</span> 
+                </div> 
             </div>
 
         </div>
@@ -73,9 +77,10 @@
     </div>
 
     <div id="ganaste">
-    <img id="imagenGanaste" src="./assets/Ganasteeeeeee.png">
-    <button id="segundoNivel">siguiente</button>
-    <button id="tercerNivel">siguiente</button>
+    <img id="imagenGanaste" src="./assets/Ganasteeeeeee.png"class="imagenes">
+    <button id="segundoNivel" class="botones">Siguiente</button>
+    <button id="tercerNivel" class="botones">Siguiente</button>
+    
     </div>
 
 

@@ -12,6 +12,7 @@ var puntaje = 0;
 var nombre = document.getElementById("nombre");
 var imagenGanaste = document.getElementById("imagenGanaste");
 
+
 var cables = [
   "amarillo",
   "azul",
@@ -29,6 +30,8 @@ document.getElementById("todo").style.display = "none";
 document.getElementById("instrucciones").style.display = "none";
 document.getElementById("ganaste").style.display = "none";
 document.getElementById("modalPerdiste").style.display = "none";
+
+
 
 function onSubmit() {
   var bienvenido = document.getElementById("bienvenido");
@@ -130,6 +133,7 @@ function perdiste() {
   document.getElementById("todo").style.display = "none";
   puntaje = 0;
   document.getElementById("score").innerText = puntaje;
+  imagenGanaste.src = "./assets/Ganasteeeeeee.png";
 }
 
 function reiniciar() {
@@ -160,4 +164,5 @@ tercerNivel.onclick = function () {
   document.getElementById("segundoNivel").style.display = "none";
   document.getElementById("score").innerText = puntaje;
   imagenGanaste.src = "./assets/GanasteFinal.png";
-};
+}
+
