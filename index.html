@@ -15,6 +15,12 @@
     cables (correcto e incorrectos)
     si se termina el tiempo la bomba explota, sino pasa al siguiente escenario, y si desactiva las tres bombas gana-->
 
+
+    <div id ="modalPerdiste">
+        <img src="./assets/Perdiste.png">
+        <button onclick="reiniciar()">Proba otra vez</button>
+    </div>
+
     <div id="inicio">
         <h1 id="bienvenido">Bienvenido/a al Juego de la Bomba</h1>
         <form onsubmit="return onSubmit()">
@@ -32,8 +38,7 @@
     </div>
         
     <div id="todo">
-
-        <div>
+        <div id="niveles">
             <h3>Nivel Fácil</h3>
         </div>
 
@@ -57,7 +62,10 @@
             
             <div>
                 <h3>Tiempo Restante: </h3>  
-                <p id="timer"> 90 </p>  
+                <p id="timer"> 90 </p>
+                <h3 id="nombre">nombre</h3>
+                <h3>Puntaje: </h3>
+                <span id="score">0</span>  
             </div>
 
         </div>
@@ -65,7 +73,7 @@
     </div>
 
     <div id="ganaste">
-    <img src="./assets/Ganasteeeeeee.png"><div>
+    <img id="imagenGanaste" src="./assets/Ganasteeeeeee.png">
     <button id="segundoNivel">siguiente</button>
     <button id="tercerNivel">siguiente</button>
     </div>
