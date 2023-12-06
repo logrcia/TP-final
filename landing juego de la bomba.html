@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-css.css">
+    <title>El Juego de la Bomba</title>
+</head>
+
+<body>
+    <section id="primerSeccion">
+        <header id="header">
+            <img id="bombaHeader" src="https://cdn.pixabay.com/photo/2017/01/31/16/59/bomb-2025548_960_720.png" alt="bomba dibujo">
+        </header>
+        <hr id="line">
+        <main>
+            <!-- inicio -->
+                <section id="seccion">
+                    <div id="parrafoPrimerSeccion">
+                        <h1 id="juegoBomba">El Juego de la Bomba</h1>
+                        <p class="parrafo">¡Bienvenid@ al juego de la bomba, donde la diversión explota a otro nivel! En este emocionante desafío, te sumergirás en una carrera contra el tiempo. Tu misión: desactivar la bomba antes de que llegue a cero. ¡Pero cuidado, cada decisión cuenta! Sólo los más astutos y rápidos sobreviven. ¿Serás vos?</p>
+                        <p class="parrafo">¿Estás list@ para la experiencia más explosiva de tu vida? ¡Unite ahora al juego de la bomba y demostrá que tenés lo necesario para ser el héroe que todos necesitan!</p>
+                        <button class="boton1">JUGAR YA</button>
+                    </div>
+
+                    <div id="divImgPrimerSeccion">
+                        <img id="imgPrimerSeccion" src="./assets/mockupcompu.png">
+                    </div>
+                </section>
+                
+        </section>
+
+        <!-- mejores jugadores -->
+        <section id="segundaSeccion">
+            <h1 class="titulo">MEJORES JUGADORES</h1>
+            <h2 class="subtitulo">¿Te atrevés a enfrentarte a los mejores?</h2>
+            
+            <div id="tableContainer">
+                <table>
+                    <tr>
+                        <th>Puesto</th>
+                        <th>Nombre</th>
+                        <th>País</th>
+                        <th>Tiempo en llegar a 30 puntos</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Hola Mi Nombre</td>
+                        <td>Argentina</td>
+                        <td>46 seg</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Hola Mi Nombre</td>
+                        <td>Francia</td>
+                        <td>43 seg</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Hola Mi Nombre</td>
+                        <td>Uruguay</td>
+                        <td>40 seg</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Hola Mi Nombre</td>
+                        <td>Argentina</td>
+                        <td>39 seg</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Hola Mi Nombre</td>
+                        <td>España</td>
+                        <td>37 seg</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </section>
+        
+        <!-- formulario de contacto -->
+        <section id="terceraSeccion">
+            <h1 class="titulo">¿ALGUNA DUDA?</h1>
+            <h2 class="subtitulo">No dudes en contactarnos.</h2>
+            <form>
+                <div id="formulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Tu correo Electrónico">
+
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="consulta">Consulta</option>
+                        <option value="comentario">Comentario</option>
+                        <option value="soporte">Soporte Técnico</option>
+                    </select>
+
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu número de Teléfono">
+
+                    <label class="checkbox-label">
+                        <label for="suscribirse">Al dejar mi contacto, acepto recibir información adicional en mi correo electrónico.</label>
+                        <input type="checkbox" id="suscribirse" name="suscribirse">
+                    </label>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="¿Cuál es tu mensaje?"></textarea>
+                </div> 
+                <div>   
+                    <input class="boton1" id="enviar" type="submit" value="Enviar"/>
+                </div>
+            </form>
+        </section>
+    </main>
+
+        <!-- footer -->
+    <footer>
+        <section>
+            <div>
+                <img id="bombaFooter" src="https://cdn.pixabay.com/photo/2017/01/31/16/59/bomb-2025548_960_720.png" alt="bomba dibujo">
+            </div>
+            <div>
+                <button id="boton2">JUGAR YA</button>
+            </div>
+                <p id="parrafoFooter">®2023 Guardianes de la Galaxia</p>
+        </section>
+    </footer>
+</body>
+</html>
